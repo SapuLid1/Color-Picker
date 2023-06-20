@@ -199,9 +199,8 @@ main {
   display: grid;
   place-items: center;
 }
-#container{
 
-}
+
 .container {
   text-align: center;
 }
@@ -235,3 +234,80 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+/* ============= For color picker ============= */
+#container{
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+  height: 25rem;
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+#container p{
+  margin: 10px;
+}
+#rgbCode{
+  height: 2.5rem;
+  width: 12.5rem;
+  background: var(--clr-white);
+  color: var(--clr-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#hexCode{
+  margin: 10px;
+  height: 2.5rem;
+  width: 12.5rem;
+  background: var(--clr-white);
+  color: var(--clr-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+/* Red slider */
+#red::-webkit-slider-runnable-track{
+  height: 0.625rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, black, red);
+
+}
+
+#red::-webkit-slider-thumb{
+  margin-top:-2.5px;
+  cursor: pointer;
+}
+/* Green slider */
+#green::-webkit-slider-runnable-track{
+  height: 0.625rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, black, Green);
+
+}
+
+#green::-webkit-slider-thumb{
+  margin-top:-2.5px;
+  cursor: pointer;
+}
+/* Blue slider */
+#blue::-webkit-slider-runnable-track{
+  height: 0.625rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, black, blue);
+
+}
+
+#blue::-webkit-slider-thumb{
+  margin-top:-2.5px;
+  cursor: pointer;
+}
+
+/*============== end of color picker ===================*/

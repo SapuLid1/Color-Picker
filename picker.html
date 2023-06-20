@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Picker</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../Color picker/css/style.css" />
+
 </head>
 <body>
     <nav>
       <div class="nav-center">
-        <h4>color flipper</h4>
+        <h4>color picker</h4>
         <ul class="nav-links">
           <li><a href="../Color picker/index.html">Hex</a></li>
           <li><a href="../Color picker/picker.html">Picker</a></li>
@@ -16,13 +19,24 @@
       </div>
     </nav>
     <main>
-      <div class="">
-        <h2>background color : <span class="color">#f1f5f8</span></h2>
-        <button class="btn btn-mid" id="btn">click me</button>
+      <div id="container">
+        <p>Red:</p>
+        <input type="range" name="red" id="red" min="0" max="255" value="255" oninput="myColor()">
+        <p>Green:</p>
+        <input type="range" name="green" id="green" min="0" max="255" value="255" oninput="myColor()">
+        <p>Blue:</p>
+        <input type="range" name="blue" id="blue" min="0" max="255" value="255" oninput="myColor()">
+        <div id="rgbCode">
+          rgb(255,255,255)
+        </div>
+          
+        <div id="hexCode">
+          #ffffff
+        </div>
       </div>
     </main>
     <!-- javascript -->
-    <script src="../Color picker/js/.js"></script>
+    <script src="../Color picker/js/clr_picker.js"></script>
     
   </body>
 </html>
