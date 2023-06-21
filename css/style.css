@@ -253,7 +253,7 @@ main {
 #rgbCode{
   height: 2.5rem;
   width: 12.5rem;
-  background: var(--clr-white);
+  background: var(--clr-primary-7);
   color: var(--clr-black);
   display: flex;
   align-items: center;
@@ -266,7 +266,7 @@ main {
   margin: 10px;
   height: 2.5rem;
   width: 12.5rem;
-  background: var(--clr-white);
+  background: var(--clr-primary-7);
   color: var(--clr-black);
   display: flex;
   align-items: center;
